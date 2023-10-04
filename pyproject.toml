@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pytorch_asr_poc"
+version = "0.1.0"
+description = "Exploration of Pytorch for ASR applications"
+authors = ["aGentlemanAndAScholar"]
+readme = "README.md"
+packages = [{include = "pytorch_asr_poc"}]
+
+[tool.poetry.dependencies]
+python = "^3.10.2"
+torch = "^2.0.1"
+torchaudio = "^2.0.2"
+matplotlib = "^3.8.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
